@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main-heading {
+    font-size: 5rem;
+    text-align: center;
+    color: rgb(3, 34, 62);
+}
+
+.container {
+    width: 70%;
+    height: 80vh;
+    background-color: rgb(93, 161, 161);
+    margin: auto;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.add-to-do {
+    height: 25%;
+    width: 100%;
+    border-radius: 2rem;
+    margin-bottom: 10px;
+    padding: 0px 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.old-to-do {
+    height: 70%;
+    width: 100%;
+    border-radius: 2rem;
+    position: relative;
+    bottom: -14px;
+    padding: 0px 2rem;
+}
+
+.input-box {
+    height: 50%;
+    width: 70%;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    outline: none;
+    padding: 0px 15px;
+    background-color: rgb(110, 110, 139);
+}
+
+.input-box::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#btn-add {
+    width: 20%;
+    height: 50%;
+    background-color: rgb(89, 89, 121);
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    font-weight: bolder;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+#btn-add:hover {
+    background-color: rgb(45, 49, 74);
+    color: rgb(50, 205, 153);
+    cursor: pointer;
+}
+
+hr {
+    height: 2px;
+    background-color: rgba(18, 4, 50, 0.3);
+    border: none;
+}
+
+.lists li {
+    display: inline-block;
+    list-style: none;
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.btn-del {
+    position: absolute;
+    margin: 7px 0px;
+    right: 2rem;
+    padding: 8px 14px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: rgb(6, 2, 75);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.btn-del:hover {
+    background-color: rgb(197, 2, 2);
+}
