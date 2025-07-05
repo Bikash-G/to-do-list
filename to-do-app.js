@@ -24,11 +24,13 @@ btnAdd.addEventListener("click", () => {
         wrapper.appendChild(newLi);
         wrapper.appendChild(btn);
         wrapper.appendChild(hr);
-        lists.appendChild(wrapper);
+        lists.prepend(wrapper);
 
 
 
         document.querySelector(".input-box").value = "";
+    } else {
+        alert("Field can't be empty!");
     }
 });
 
