@@ -29,6 +29,7 @@ btnAdd.addEventListener("click", () => {
 
 
         document.querySelector(".input-box").value = "";
+        saveData()
     } else {
         alert("Field can't be empty!");
     }
@@ -38,10 +39,20 @@ lists.addEventListener("click", (e) => {
     if (e.target.classList.contains("btn-del")) {
         const wrapper = e.target.parentElement;
         wrapper.remove();
+        saveData()
     }
 
     if(e.target.tagName === "LI") {
         e.target.classList.toggle("completed");
+        saveData()
     }
 });
 
+const saveData = () => {
+    localStorage.setItem("data", lists.innerHTML);
+}
+
+const showTask = () => {
+    lists.innerHTML = localStorage.getItem("data");
+}
+showTask()
